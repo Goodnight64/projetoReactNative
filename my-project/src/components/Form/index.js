@@ -36,16 +36,18 @@ function validationImc(){
     return(
         <View style={styles.FormContext}>
          <View style={styles.Form}>
-            <Text>Altura</Text>
+            <Text style={styles.FormLabel}>Altura</Text>
             <TextInput 
+            styles={styles.Imput}
             onChangeText={setHeight}
             value={height}
             placeholder = "EX . 1.75"
             keyboardType="numeric"
             ></TextInput>
 
-            <Text>Peso</Text>
+            <Text style={styles.FormLabel}>Peso</Text>
             <TextInput 
+            styles={styles.Imput}
             onChangeText={setWeight}
             value={Weight}
             placeholder = "EX . 75"

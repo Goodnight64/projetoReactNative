@@ -17,6 +17,22 @@ const styles = StyleSheet.create({
     height:"auto",
     marginTop:30,
     padding: 10,
+   },
+
+   FormLabel:{
+    color: "#000000",
+    fontSize: 18,
+    paddingLeft: 20,
+   },
+
+   Imput:{
+    width:"90%",
+    borderRadius:50,
+    backgroundColor: "#f6f6f6",
+    height:40,
+    margin:12,
+    paddingLeft:10,
+
    }
 })
 
