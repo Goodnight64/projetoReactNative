@@ -11,7 +11,7 @@ const [imc, setImc] = useState(null)
 const [TextButton, setTextButton] = useState("calcular")
 
 function imcCalculator(){
-    return setImc(Weight/(height * height).toFixed(2))
+    return setImc((Weight/(height*height)).toFixed(2))
 }
 
 function validationImc(){
@@ -42,12 +42,12 @@ function validationImc(){
             <TextInput 
             onChangeText={setWeight}
             value={Weight}
-            placeholder = "EX . 1.75"
+            placeholder = "EX . 75"
             keyboardType="numeric"
             ></TextInput>
 
             <Button 
-            onPress={() => validationImc}
+            onPress={() => validationImc()}
             title={TextButton}></Button>
 
          </View>
